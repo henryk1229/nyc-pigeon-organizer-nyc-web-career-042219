@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
   new_hash = {}
   data.each do |attribute, attribute_hash|
     attribute_hash.each do |specific_key, specific_value|
-      new_hash[specific_value]
+      new_hash[specific_value]=attribute_hash
       
     end
   end
