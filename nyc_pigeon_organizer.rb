@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
       specific_value_array.each do |value|
         new_hash[value] ||= {}
         new_hash[value][attribute] ||= []
-        new_hash[value][attribute] <<
+        new_hash[value][attribute] << specific_key.to_s 
       end
       
     end
