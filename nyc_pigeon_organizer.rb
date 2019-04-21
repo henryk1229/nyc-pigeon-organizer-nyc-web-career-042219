@@ -4,7 +4,10 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, attribute_hash|
     attribute_hash.each do |specific_key, specific_value|
       specific_value.each do |value|
-        new_hash[value]
+        if new_hash[value]
+          new_hash[value][attribute_hash]
+        else
+          new_hash[value]
       
     end
   end
