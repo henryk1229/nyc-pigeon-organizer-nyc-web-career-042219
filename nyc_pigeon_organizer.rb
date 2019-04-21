@@ -2,8 +2,8 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   new_hash = {}
   data.each do |attribute, attribute_hash|
-    attribute_hash.each do |specific_key, specific_value|
-      specific_value.each do |value|
+    attribute_hash.each do |specific_key, specific_value_array|
+      specific_value_array.each do |value|
         new_hash[value]
       end
       
