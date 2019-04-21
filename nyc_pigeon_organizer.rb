@@ -8,6 +8,8 @@ def nyc_pigeon_organizer(data)
           new_hash[value][attribute_hash]
         else
           new_hash[value]
+        end
+      end
       
     end
   end
